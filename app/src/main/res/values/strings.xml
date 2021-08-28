@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JoKenPo - PA1</string>
+    <string name="participantesLbl">Selecione o número de participantes</string>
+    <string name="doisJogadoresLbl">2 Jogadores</string>
+    <string name="tresJogadoresLbl">3 Jogadores</string>
+    <string name="jogador">jogador</string>
+    <string name="papel">0</string>
+    <string name="pedra">1</string>
+    <string name="tesoura">2</string>
+</resources>
