@@ -26,10 +26,6 @@ public enum JogadasEnum{
         return quemVenco;
     }
 
-    public String getDescricao() {
-        return descricao;
-    }
-
     public static JogadasEnum fromString(String valor){
         return JogadasEnum.fromValue(Integer.parseInt(valor));
     }
@@ -44,10 +40,7 @@ public enum JogadasEnum{
     }
 
     public static boolean isVenceJogada(JogadasEnum jog1, JogadasEnum jog2){
-        if(jog1.getQuemVenco() == jog2.getCodigo() || jog2.equals(JogadasEnum.PERDEDOR)){
-            return true;
-        }
-        return false;
+        return jog1.getQuemVenco() == jog2.getCodigo() || jog2.equals(JogadasEnum.PERDEDOR);
     }
 
 }

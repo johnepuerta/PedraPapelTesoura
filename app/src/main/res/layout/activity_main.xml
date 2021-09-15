@@ -5,40 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="5dp"
+    android:padding="5dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/jogadoresTx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/participantesLbl"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <RadioGroup
+        android:text="Participantes: 2" />
+    <TextView
+        android:id="@+id/jogadasTx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <RadioButton
-            android:id="@+id/doisjogadoresRb"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/doisJogadoresLbl"
-            android:checked="true"
-            >
-        </RadioButton>
-        <RadioButton
-            android:id="@+id/tresjogadoresRb"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/tresJogadoresLbl"
-            >
-        </RadioButton>
-    </RadioGroup>
+        android:text="Jogadas: 1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -112,23 +91,98 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/jog1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Jogada 1:"></TextView>
+        <TextView
+            android:id="@+id/jog1Vencedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></TextView>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/jog2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Jogada 2:"></TextView>
+        <TextView
+            android:id="@+id/jog2Vencedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></TextView>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/jog3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Jogada 3:"></TextView>
+        <TextView
+            android:id="@+id/jog3Vencedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></TextView>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/jog4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Jogada 4:"></TextView>
+        <TextView
+            android:id="@+id/jog4Vencedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></TextView>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/jog5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Jogada 5:"></TextView>
+        <TextView
+            android:id="@+id/jog5Vencedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></TextView>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray">
+        <TextView
+            android:id="@+id/vencedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/fim"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vencedor:"
-            android:textSize="20dp">
-        </TextView>
-        <TextView
-            android:id="@+id/resultado"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="32dp"
-            >
-        </TextView>
-    </LinearLayout>
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="FIM DO JOGO"
+        android:visibility="gone"></TextView>
 </LinearLayout>

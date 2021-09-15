@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".EditarActivity">
+    <TextView
+        android:id="@+id/jogadoresLb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/participantesLbl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        ></TextView>
+
+    <RadioGroup
+        android:id="@+id/participantesNrRb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jogadoresLb"
+        >
+        <RadioButton
+            android:id="@+id/doisjogadoresRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/doisJogadoresLbl"
+            android:checked="true"
+            >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/tresjogadoresRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tresJogadoresLbl"
+            >
+        </RadioButton>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/jogadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Número de jogadas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/participantesNrRb"
+        ></TextView>
+    <RadioGroup
+        android:id="@+id/partidasRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jogadas"
+        >
+        <RadioButton
+            android:id="@+id/umaPartidaRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 - Uma"
+            android:checked="true"
+            >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/tresPartidasRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3 - Três"
+            >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/cincoPartidasRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5 - Cinco"
+            >
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/salvarBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/partidasRg"
+        android:text="Salvar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
